@@ -51,3 +51,8 @@ Run from `Order_Processing_Starter`:
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
 ```
+## Task 3 GitHub Actions
+
+The repository-root `.github/workflows/tests.yml` runs on every push and pull request. It checks out the repository, sets up Python 3.12, installs `requirements.txt`, and runs `python -m pytest -q` from `Order_Processing_Starter`.
+
+Local verification: **12 passed**. Hosted runs are available on the [Unit tests workflow page](https://github.com/Euthymian/Security-and-Reliable-Programming/actions/workflows/tests.yml).

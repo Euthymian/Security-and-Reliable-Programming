@@ -51,10 +51,9 @@ Run from `Order_Processing_Starter`:
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
 ```
+<img width="1327" height="117" alt="image" src="https://github.com/user-attachments/assets/742dde52-0fb5-4bae-94f5-65222d5c54e4" />
+
+
 ## Task 3 GitHub Actions
+<img width="1251" height="268" alt="image" src="https://github.com/user-attachments/assets/7007962e-f83f-426b-8619-1620bf85b482" />
 
-The repository-root `.github/workflows/tests.yml` runs on every push and pull request. It checks out the repository, sets up Python 3.12, installs `requirements.txt`, and runs `python -m pytest -q` from `Order_Processing_Starter`.
-
-Local verification: **12 passed**. Hosted runs are available on the [Unit tests workflow page](https://github.com/Euthymian/Security-and-Reliable-Programming/actions/workflows/tests.yml).
-
-Successful hosted CI: [Unit tests run #1 — passed](https://github.com/Euthymian/Security-and-Reliable-Programming/actions/runs/43580046697).

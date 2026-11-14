@@ -29,3 +29,25 @@ All paths below are relative to `Order_Processing_Starter/`.
 - Editing a cart retains its active coupon and recalculates the total.
 - Successful checkout clears both saved and current cart contents and resets the coupon. Failed payments preserve them.
 
+## Task 2 Unit tests
+
+Exactly **12 unit tests** are in `Order_Processing_Starter/tests/test_reliability.py`, replacing the two starter smoke tests:
+
+1. Reject invalid addition quantities without changing the cart.
+2. Merge duplicate products and enforce combined stock limits.
+3. Recalculate discounts after cart additions and removals.
+4. Prevent stacked coupons and replace the active coupon correctly.
+5. Round monetary calculations half up to cents.
+6. Prevent a fixed discount from making the total negative.
+7. Reject empty checkout without charging or creating an order.
+8. Recheck changed inventory before charging.
+9. Preserve inventory and cart state after a declined payment.
+10. Handle unexpected payment errors without repeating the charge.
+11. Roll back all local checkout changes after a database failure.
+12. Commit successful checkout once when a request is repeated.
+
+Run from `Order_Processing_Starter`:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest -q
+```
